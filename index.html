@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header class="logo">
+
+            <h1><img src="imagenes/logo.png" alt="Logo de Alura"></h1>
+
+        </header>
+
+        <main>
+
+            <section>
+                <textarea class="textoEntrada" cols="40" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+            
+                <div class="informacion">
+                    <img src="imagenes/bi_exclamation-circle-fill.png" class="informacionImagen">
+                    <h6 class="informacionTexto"> Solo letras minúsculas y sin acentos</h6>
+                </div>
+
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+
+            </section>
+
+            <section>
+                <textarea readonly class="textoSalida" cols="20" rows="10"></textarea>
+
+                <div>
+                    <button class="copiar" onclick="botonCopiar()">Copiar</button>
+                </div>
+
+                <div class="rectangulo">
+
+                    <img src="imagenes/Muñeco.png">
+                    <h4>Ningún mensaje fue encontrado</h4>
+                    <h5>Ingresa el texto que desees encriptar o desencriptar</h5>
+                
+                </div>
+
+
+            </section> 
+            
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+
+    
+</html>
